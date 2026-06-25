@@ -1,0 +1,46 @@
+:root {
+    --font-heading: 'Lato', sans-serif;
+    --font-body: 'Karla', sans-serif;
+    --color-one: #fff;
+    --color-two: #000;
+    --color-three: #d69e3d;
+    --color-four: #966f2c:
+    --color-five: #f3f0e9;
+}
+
+header {
+    background-color: (0,0,0, 0.5);
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+nav ul{
+    display: flex;
+    align-items:end;
+    gap: 2rem;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-one);
+}
+
+.hero-banner{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: var(--font-heading);
+    color: var(--color-one);
+}
