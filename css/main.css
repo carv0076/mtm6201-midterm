@@ -129,7 +129,7 @@ a{
 
 body {
     background-color: var(--color-five);
-     overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 h2 {
@@ -140,6 +140,10 @@ h2 {
 h3 {
     color: var(--color-three);
     font-size: 1.375rem;
+}
+
+p {
+    font-family: var(--font-body);
 }
 
 .welcome {
@@ -163,6 +167,33 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.products div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.products img {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    max-width: 150px;
+    height: auto;
+}
+
+.products div p {
+    text-align: center;
 }
 
 
