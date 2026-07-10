@@ -277,6 +277,46 @@ p {
     font-weight: bold;
 }
 
+.about-wrapper {
+    margin: 1rem;
+}
+
+.about-us {
+    margin-bottom: 5rem;
+}
+
+.about-us img {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: auto;
+}
+
+.about-us h2, .about-us h3, .about-us p{
+    margin-top: 1rem;
+}
+
+.about-us p {
+    font-size: 1.25rem;
+}
+
+.about-us button {
+    display: block;
+    border: none;
+    background: var(--color-two);
+    margin: 2rem 0;
+}
+
+.about-us button a {
+    display: block;
+    padding: 1rem 3rem;
+    color: var(--color-one);
+    font-size: 1.25rem;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 
 
 
