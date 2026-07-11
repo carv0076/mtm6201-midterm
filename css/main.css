@@ -31,6 +31,22 @@ h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
 }
 
+.white-button:hover, .black-button:hover{
+    background-color: var(--color-four);
+}
+
+.white-button a:hover, .white-button a:hover {
+    color: var(--color-one);
+}
+
+.clear-button:hover {
+    background-color: var(--color-one);
+}
+
+.clear-button a:hover {
+    color: var(--color-two);
+}
+
 nav ul{
     display: none;
 }
