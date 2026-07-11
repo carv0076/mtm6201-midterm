@@ -77,6 +77,7 @@ table {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--font-heading);
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -252,7 +253,7 @@ p {
     max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .products {
@@ -647,6 +648,18 @@ footer p {
 
 @media screen and (min-width: 992px){
 
+    h1 {
+        font-size: 3.875rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
     nav {
     display: flex;
     align-items: center;
@@ -665,5 +678,44 @@ footer p {
     header button {
     display: none;
 }
+
+    .welcome {
+        margin: 7rem;
+}
+
+    .welcome-imgs {
+        gap: 2rem;
+}
+
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1100px;
+    }
+
+    .products > h3,.products > h2 {
+        grid-column: 1 / 4;
+    }
+
+    .products div:nth-of-type(1) {
+        grid-column: 1 / 2;
+        grid-row: 3;
+    }
+
+    .products div:nth-of-type(2) {
+        grid-column: 2 / 3;
+        grid-row: 3;
+    }
+
+    .products div:nth-of-type(3) {
+        grid-column: 3 / 4;
+        grid-row: 3;
+        justify-self: stretch;
+        width: auto;
+    }
+
+    .baked-goods h3 {
+        white-space: nowrap;
+}
+
 
 }
