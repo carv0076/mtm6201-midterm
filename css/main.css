@@ -83,18 +83,16 @@ h1,h2,h3,h4,h5,h6 {
 
 .white-button:hover, .black-button:hover{
     background-color: var(--color-four);
-}
-
-.white-button a:hover, .white-button a:hover {
     color: var(--color-one);
 }
 
 .clear-button:hover {
     background-color: var(--color-one);
+    color: var(--color-two);
 }
 
-.clear-button a:hover {
-    color: var(--color-two);
+button:focus {
+    border: 1px solid var(--color-three);
 }
 
 nav ul{
@@ -135,6 +133,7 @@ nav {
 }
 
 a   {
+    font-family: var(--font-body);
     text-decoration: none;
     color: var(--color-one);
 }
@@ -200,7 +199,7 @@ a   {
     margin: 2rem auto 0;
 }
 
-.hero-content button a {
+.hero-content button {
     display: block;
     padding: 1rem 2.25rem;
     color: var(--color-two);
@@ -335,10 +334,6 @@ p {
     border: none;
     padding: 0;
     margin: 2rem auto 0;
-}
-
-.menu button a {
-    display: block;
     padding: 1rem 2.25rem;
     color: var(--color-two);
     font-size: 1.25rem;
@@ -352,10 +347,6 @@ p {
     border: 1px solid var(--color-one);
     background: transparent;
     margin: 2rem auto 0;
-}
-
-.locations button a {
-    display: block;
     padding: 1rem 3rem;
     color: var(--color-one);
     font-size: 1.25rem;
@@ -388,10 +379,6 @@ p {
     border: none;
     background: var(--color-two);
     margin: 2rem 0;
-}
-
-.about-us button a {
-    display: block;
     padding: 1rem 3rem;
     color: var(--color-one);
     font-size: 1.25rem;
@@ -473,6 +460,12 @@ footer p {
     padding-top: 1.5rem;
     padding-bottom: 7rem;
     color: var(--color-one);
+}
+
+button:focus,
+a:focus {
+    border: 2px solid var(--color-three);
+    outline: none;
 }
 
 @media screen and (min-width: 600px){
